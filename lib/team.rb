@@ -53,4 +53,10 @@ class Team
     team_details.store("player_count", player_count)
     team_details
   end
+
+  def average_cost_of_player
+    avg_cost = total_value / player_count
+    avg_cost_as_string = avg_cost.to_s
+    avg_cost_dollar_amt = "$#{avg_cost_as_string}"
+  end
 end

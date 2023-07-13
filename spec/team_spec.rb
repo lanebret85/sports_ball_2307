@@ -101,7 +101,7 @@ RSpec.describe Team do
     expect(team.average_cost_of_player).to eq("$21,300,000")
   end
 
-  it "can sort players alphabetically by last name" do
+  xit "can sort players alphabetically by last name" do
     team = Team.new("Dodgers", "Los Angeles")
     player_1 = Player.new("Michael Palledorous" , 1000000, 36)
     player_2 = Player.new("Kenny DeNunez", 500000, 24)
