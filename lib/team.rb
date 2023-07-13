@@ -34,4 +34,16 @@ class Team
     end
     players
   end
+
+  def total_value
+    player_costs = []
+    @roster.each do |player|
+      player_costs << player.total_cost
+    end
+    total_amount = 0
+    player_costs.each do |cost|
+      total_amount = total_amount + cost
+    end
+    total_amount
+  end
 end
