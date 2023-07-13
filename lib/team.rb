@@ -6,4 +6,8 @@ class Team
     @location = location
     @roster = []
   end
+
+  def player_count
+    @roster.count
+  end
 end
