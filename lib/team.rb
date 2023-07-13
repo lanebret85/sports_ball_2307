@@ -46,4 +46,11 @@ class Team
     end
     total_amount
   end
+
+  def details
+    team_details = {}
+    team_details.store("total_value", total_value)
+    team_details.store("player_count", player_count)
+    team_details
+  end
 end
